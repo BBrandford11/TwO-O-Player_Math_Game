@@ -10,12 +10,10 @@ class Question
     puts "#{ name }: What does #{@first_num} plus #{@second_num} equal? "
     #print "Please enter your answer"
     
-  end 
-  
-  
+  end   
 
   def check_answer(result)
-    puts @correct
+    
      result == @correct
   end
 

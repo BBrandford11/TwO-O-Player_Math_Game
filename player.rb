@@ -25,6 +25,7 @@ class Player
       puts "#{name}: WRONG! " 
       lose_life      
     end
+    
   end
   
 end
