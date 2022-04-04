@@ -15,8 +15,16 @@ class Player
   end
 
   def ask_question
-    question= Question.new
-    question.ask(name)
+    new_question= Question.new
+    new_question.ask(name)
+    result = gets.chomp
+    check = new_question.check_answer(result.to_i)
+    if check == true
+      puts "#{name}: YES! You are correct."
+    else
+      puts "#{name}: WRONG! " 
+      lose_life      
+    end
   end
   
 end

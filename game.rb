@@ -10,8 +10,14 @@ class Game
 
   def new_game
     puts "New game starting"
-    @player1.ask_question
+    rotation
   end
+
+  def rotation
+    @player1.ask_question
+    @player2.ask_question
+    puts "-----NEW TURN-----"
+  end 
 
 
 

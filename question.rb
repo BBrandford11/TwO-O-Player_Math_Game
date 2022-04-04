@@ -7,15 +7,16 @@ class Question
   end
 
   def ask(name)
-    print "#{ name }: What does #{@first_num} plus #{@second_num} equal? "
-    
+    puts "#{ name }: What does #{@first_num} plus #{@second_num} equal? "
+    #print "Please enter your answer"
     
   end 
   
   
 
-  def check_answer
-    @correct == @answer
+  def check_answer(result)
+    puts @correct
+     result == @correct
   end
 
 end
