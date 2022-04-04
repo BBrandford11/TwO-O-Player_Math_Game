@@ -25,11 +25,13 @@ class Game
   def check_lives
     if @player1.lost 
       puts "#{@player2.name} wins with a score of #{@player2.lives}/3"  
+      puts "----GAME OVER----"
       exit(0)
          
     end  
     if @player2.lost
       puts "#{@player1.name} wins with a score of #{@player1.lives}/3"  
+      puts "----GAME OVER----"
       exit(0)
       
     end 
